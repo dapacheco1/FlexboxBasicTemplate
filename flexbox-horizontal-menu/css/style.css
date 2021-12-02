@@ -1,0 +1,135 @@
+/*GENERAL SETTINGS*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*BODY STYLES*/
+body{
+    /*background:rgb(255, 183, 84);*/
+    font-size: 1.6rem;
+}
+
+/*FLEXBOX CONTAINER STYLES*/
+.flex-container{
+    /*border: 0.1rem solid rgb(0,0,0);*/
+    display: flex;/*it replace the property float and clearfix*/
+    background-color: rgb(232, 239, 233);
+    /*padding:2rem;*/
+    /*My layout can be horizontal with row or vertical with column*/
+   /* flex-direction: row;
+    flex-wrap: wrap;Orden flexbox items automatically but pay attention to your flex__items properties.*/
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+/*FLEX ITEMS*/
+.flex__item{
+   /* border: 0.1rem solid rgb(70,69,69);*/
+    background-color: rgb(255,255,255);
+    height: auto;
+    line-height: 7rem;
+    /*a line has 120px of separation in vertical form like
+    first line
+    --120px blank space--
+    second line
+    */
+    text-align: center;
+    padding:0 0.5rem;
+
+}
+
+/*Font styles*/
+h1,.flex__item{
+    font-family: sans-serif;
+}
+
+/*Flex menu or navbar styles*/
+.flex__menu ul{
+    list-style:none;
+}
+
+.flex__menu ul li{
+    display: inline;
+}
+
+.flex__menu ul li:hover{
+    background-color: beige;
+}
+
+.flex__menu ul li a{
+    text-decoration: none;
+    margin-left: 1.6rem;
+}
+
+
+/*General settings for navbar and footer*/
+.flex__menu,.flex__footer{
+    width: 100%;
+    margin-top: 0;
+}
+
+
+/*MAIN OR LEFT CONTENT*/
+.flex__item__left{
+    width: 75%;
+    height: 70vh;
+}
+
+
+/*ASIDE OR RIGHT CONTENT*/
+.flex__item__right{
+    width: 25%;
+    height: 70vh;
+}
+
+/*ELEMENTS COLORS*/
+.flex__menu{
+    background-color: silver;
+    height: 10vh;
+}
+
+.flex__item__left{
+    background-color: skyblue;
+}
+
+.flex__item__right{
+    background-color: thistle;
+}
+
+.flex__footer{
+    background-color: gray;
+    height: 20vh;
+    
+}
+
+.flex__footer a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Media querie for responsive design for smartphones*/
+@media (max-width:600px){
+    .flex__item__left,.flex__item__right{
+        width: 100%;
+    } 
+    
+    .flex__menu ul li{
+        display: block;
+    }
+
+    .flex__menu,.flex__footer{
+        width: 100%;
+        height:auto;
+    }
+}
+
+
+
+
+
