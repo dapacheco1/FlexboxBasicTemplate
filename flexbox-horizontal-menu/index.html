@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>BASIC FLEXBOX TEMPLATE</title>
 </head>
 <body>
-    <section class="flex-container">
+    <section class="flex-container  bg-dark">
         <nav class="flex__item flex__menu">
             <ul class="flex-container">
+                <li class="flex-item">
+                    <img src="img/logo.png" class="image"  alt="coffee_logo">
+                </li>
                 <li class="flex-item">
                     <a href="#">HOME</a>
                 </li>
@@ -22,16 +28,39 @@
                 </li>
             </ul>
         </nav>
-        <main class="flex__item flex__item__left">
-            MAIN CONTENT
+        <main class="flex__item flex__item__left bg-image">
+            <div class="box flex-item">
+                <h3 class="font-light fancy">!THE PLEASURE OF TASTY COFFEE</h3>
+                <p class="font-light fancy">Our coffee has a high quality flavor and tasty</p>
+                <p class="font-light fancy">You can find us at this place: Av. La Prensa Oe10</p>
+                <p class="font-light fancy">Our phones are: XXX-XXX-XXXX</p>
+            </div>
         </main>
         <aside class="flex__item flex__item__right">
-            Side bar
+            <h1 class="font-light fancy">PRICE LIST</h1>
+            <ul>
+                <li>
+                    <p class="font-light fancy">Capuccino........ <span>$3,50</span></p>
+                </li>
+                <li>
+                    <p class="font-light fancy">Mocaccino........ <span>$3,50</span></p>
+                </li>
+                <li>
+                    <p class="font-light fancy">Milk with chocolate........ <span>$1,50</span></p>
+                </li>
+                <li>
+                    <p class="font-light fancy">Only milk........ <span>$0,50</span></p>
+                </li>
+                <li>
+                    <p class="font-light fancy">Tea........ <span>$1,50</span></p>
+                </li>
+            </ul>
         </aside>
         <footer class="flex__item flex__footer">
             All Rights Reserved ©. Web page created by <a href="#">Put your name here</a>
         </footer>
         
     </section>
+    <script src="js/main.js"></script>
 </body>
 </html>

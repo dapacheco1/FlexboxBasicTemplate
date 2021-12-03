@@ -19,19 +19,24 @@ body{
 .flex-container{
     /*border: 0.1rem solid rgb(0,0,0);*/
     display: flex;/*it replace the property float and clearfix*/
-    background-color: rgb(232, 239, 233);
+    
     /*padding:2rem;*/
     /*My layout can be horizontal with row or vertical with column*/
    /* flex-direction: row;
     flex-wrap: wrap;Orden flexbox items automatically but pay attention to your flex__items properties.*/
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
+}
+
+.image{
+    width:10rem;
+    height:7rem;
 }
 
 /*FLEX ITEMS*/
 .flex__item{
    /* border: 0.1rem solid rgb(70,69,69);*/
-    background-color: rgb(255,255,255);
+    /*background-color: rgb(255,255,255);*/
     height: auto;
     line-height: 7rem;
     /*a line has 120px of separation in vertical form like
@@ -50,7 +55,7 @@ h1,.flex__item{
 }
 
 /*Flex menu or navbar styles*/
-.flex__menu ul{
+ul{
     list-style:none;
 }
 
@@ -58,15 +63,24 @@ h1,.flex__item{
     display: inline;
 }
 
-.flex__menu ul li:hover{
-    background-color: beige;
+.flex__menu ul li a:hover{
+    background-color: white;
+    color:black;
+    
 }
 
 .flex__menu ul li a{
     text-decoration: none;
-    margin-left: 1.6rem;
+    padding: 2.7rem;
+    color: white;
 }
 
+.bg-image{
+    background: url('../img/coffe_cup.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
 
 /*General settings for navbar and footer*/
 .flex__menu,.flex__footer{
@@ -77,33 +91,22 @@ h1,.flex__item{
 
 /*MAIN OR LEFT CONTENT*/
 .flex__item__left{
-    width: 75%;
+    width: 60%;
     height: 70vh;
 }
 
 
 /*ASIDE OR RIGHT CONTENT*/
 .flex__item__right{
-    width: 25%;
+    width: 40%;
     height: 70vh;
+    background-color: rgba(78, 78, 78, 1);
 }
+
 
 /*ELEMENTS COLORS*/
-.flex__menu{
-    background-color: silver;
-    height: 10vh;
-}
-
-.flex__item__left{
-    background-color: skyblue;
-}
-
-.flex__item__right{
-    background-color: thistle;
-}
-
 .flex__footer{
-    background-color: gray;
+   color:white;
     height: 20vh;
     
 }
@@ -111,6 +114,33 @@ h1,.flex__item{
 .flex__footer a{
     font-weight: bold;
     text-decoration: none;
+    color:inherit;
+}
+
+.bg-dark{
+    background-color: black;
+}
+
+.bg-lightdark{
+    background-color: rgba(32, 32, 32, 1);
+}
+
+.font-light{
+    
+    color:white;
+}
+
+.fancy{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.box{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0,0,0,0.9);
+    margin-left: 20rem;
+    margin-top:10rem;
 }
 
 /*Media querie for responsive design for smartphones*/
