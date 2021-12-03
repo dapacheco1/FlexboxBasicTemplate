@@ -11,3 +11,4 @@ Not responsive at all</br>
 * rgba and rgba colors</br>
 * background image</br>
 * relative measures (rem)</br>
+* Not JS implemented
